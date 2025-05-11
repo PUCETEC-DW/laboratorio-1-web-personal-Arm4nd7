@@ -1,62 +1,112 @@
 body {
     margin: 0;
-    background-color: #826ea7;
+    background-color: #b9a6dbd7;
 }
 
-header, h2 {
-    background-color: #ebdfbe;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    border-radius: 0.4rem;
-    margin: 20px;
+header{
+    display: flex;
 }
 
 h2{
-    font-size: 3rem;
     color: white;
+    background-color: #ebdfbe88;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 20px;
+    font-size: 3rem;
+    align-content: center;
     text-shadow: #050407 1px 3px 2px;
     margin: 2%;
+}
+
+div{
+    text-align: center;
 }
 
 h1, h2, details{
     font-family: 'Times New Roman', Times, serif;
 }
 
+li, p, label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    color:  white;
+    text-shadow: #0a0a0a 2px 3px 5px;
+}
+
 h2:active{
     color: #a689eb;
 }
 
-header:hover, h2:hover {
+.barra-navegacion{
+    align-content: center;
+    margin: 2%;
+}
+
+.barra-navegacion:hover, h2:hover{
+    transition: all 2s ease-in-out;
     background-image: linear-gradient(
         to top, #0e0d0fcc, #00000051
     ), url("https://tse2.mm.bing.net/th?id=OIG2.dvcM_b_Dk22knjmI00IS&pid=ImgGn");
-    transition: all 1.8s linear;
+    
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     cursor: pointer;
+    border-radius: 5rem;
+    margin: 0 5%;
 }
 
 .barra-navegacion label a h2{
-    display: inline-block;
-    padding: 0.2%;
+    padding: 2rem;
 }
 
-#informacion {
-    background-color: #826ea7;
+#informacion{
     padding: 0.75rem;
     display: flex;
+    height: 35rem;
+    justify-content: center;
+}
+
+#informacion div{
+    margin: 0 5%;
+    text-align: left;
+}
+
+#informacion .info, .mis-detalles{
+    align-content: center;
+}
+
+.mis-detalles:hover{
+    transition: all 2s ease-in-out;
+    background-image:  linear-gradient(
+            to top, #bda5eddb, #4029875c 
+        ),url("https://media.licdn.com/dms/image/v2/C4E03AQGeR64Gi3ep1g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1655940314810?e=1752710400&v=beta&t=jKM0U8plDLZtP6kwnw9GPzA6d1bsdUB1tprdbdN0QCs");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+#informacion .imagen{
+    align-content: center;
 }
 
 details{
+    text-align: left;
     cursor: pointer;
 }
 
 .img2 {
-    width: 40%;
-    height: 40%;
+    width: 100%;
+    height: 50%;
     border-radius: 0.7rem;
     margin-left: 20%;
+}
+
+#maquetas{
+    height: 46.5rem;
 }
 
 #maquetas:hover{
@@ -64,11 +114,10 @@ details{
             to top, #bda5eddb, #4029875c 
         ),
         url("https://cdn.andro4all.com/andro4all/2016/07/fondos-pantalla-android-2.jpg?width=800");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        align-items: center;
-        transition: all 1.8s linear;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 4s ease-in-out;
 }
 
 .python, .csharp, .java-script{
@@ -83,7 +132,7 @@ details{
     background-image: linear-gradient(
             to top, #260567ad, #4029875d
         ),
-        url("https://th.bing.com/th/id/OIP.jBcZ1zGElDbJtzTX1l6VWAHaFP?cb=iwc1&rs=1&pid=ImgDetMain");
+        url("https://bing.com/th/id/BCO.323977bd-62e5-476e-962d-b7c5d74f4829.png");
     transition: all 1.8s linear;
     background-position: center center;
     background-repeat: no-repeat;
@@ -107,7 +156,7 @@ details{
     background-image: linear-gradient(
             to top, #260567ad, #4029875d
         ),
-        url("https://play-lh.googleusercontent.com/SDRKeYeVIRzA5TW4W7w3JX4kykKdG5Be12Dba5xWVABB2FCZXB4iGK5pskq9tvNVMg");
+        url("https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo.jpg");
         transition: all 1.8s linear;
         background-position: center center;
         background-repeat: no-repeat;
@@ -115,45 +164,51 @@ details{
         cursor: pointer;
 }
 
-li, p, label{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 2rem;
-    color:  white;
-    text-shadow: #0a0a0a 2px 3px 5px;
-}
-
-div{
-    text-align: center;
-}
-
 #opiniones{
     display: flex;
     align-items: center;
-    padding: 2rem;
-    margin: 10% 0;
-}
-
-#opiniones div p{
-    text-align: left;
-    margin: 3% 6%;
+    width: auto;
+    height: 100%;
+    padding: 9% 0;
+    margin: 0;
 }
 
 #opiniones label textarea{
-    width: 50%;
+    width: 80%;
     height: 50%;
     font-size: 1em;
     background-color: #fff3cf;
 }
 
 #opiniones:hover{
+    justify-content: center;
     background-color: #7556a5;
-    transition: all 2.5s ease-in-out;
-    display: inline-block;
-    width: 100%;
+    transition: all 1.5s ease-in-out;
+    margin: 2% 10%;
+}
+
+.parrafo {
+    opacity: 1;
+    height: auto;
+    transition: all 3s ease-in-out;
+}
+
+#opiniones:hover > div .parrafo{
+    transition: all 2s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
 }
 
 #contacto{
     display: flex;
+    height: 45rem;
+    align-items: center;
+}
+#contacto div{
+    height: 20rem;
+
 }
 
 .redes, .formulario {
@@ -175,7 +230,7 @@ div{
     background-image: linear-gradient(
             to top,  #57378b9c, #937ac6a5  
         ),
-        url("https://blog.grupocajamar.com/wp-content/uploads/2017/07/GettyImages-471756031.jpg");
+        url("https://bing.com/th/id/BCO.b100f473-f639-47b5-ae46-cc60f8e14435.png");
     background-size: cover;
     background-position: center center;
     transition: all 1.4s linear;
@@ -187,7 +242,7 @@ div{
     background-image: linear-gradient(
             to top, #57378b9c, #937ac6a5 
         ),
-        url("https://www.agenceici.com/assets/uploads/images/news/max/601523302836.jpg");
+        url("https://bing.com/th/id/BCO.e10d9951-a008-4efa-beb8-0542c9785ba7.png");
     background-size: cover;
     background-position: center center;
     transition: all 1.4s linear;
@@ -214,10 +269,13 @@ table{
 }
 
 h1{
-    font-size: 6rem;
+    font-size: 11rem;
     color: #b89bea;
     text-shadow: #050407 2px 3px 5px;
     margin: 0;
+    height: 45rem;
+    align-content: center;
+    text-align: center;
 }
 
 ol{
@@ -255,6 +313,9 @@ button > a {
 
     li, p, label{
         font-size: 25px;
+    }
+    div{
+        margin: 2%;
     }
 
     #informacion {
