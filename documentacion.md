@@ -4,7 +4,7 @@ Bienvenido a mi página web.
 En este apartado te indico como avancé en mi página web.
 Antes debo mencionarte que: usé lo mas básico en desarrollo web, sin más que comentar, empecemos.
 
-###  [🧑‍💻 Puedes revisarlo en ](https://arm4nd7.github.io/laboratorio-1-web-personal-Arm4nd7/)
+###  [🧑‍💻 Revisalo aquí  <-- ](https://arm4nd7.github.io/laboratorio-1-web-personal-Arm4nd7/)
 ---
 # 📌 **Indice**
 1. **Estructura**
